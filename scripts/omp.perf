@@ -1,0 +1,395 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 48.66    145.52   145.52                             func(double, double const*, double*, void*)
+ 31.54    239.83    94.32  2626313     0.00     0.00  ray_iterator::iter(ray*)
+  7.05    260.91    21.08  2644285     0.00     0.00  hittable_list::hit(ray const&, interval, hit_record&) const
+  5.82    278.32    17.41    25315     0.00     0.01  camera::ray_color(ray&, hittable const&) const
+  5.25    294.03    15.71  2639039     0.00     0.00  img::hit(ray const&, interval, hit_record&) const
+  0.32    295.00     0.97        1     0.97     1.99  void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&)
+  0.32    295.97     0.97        1     0.97     0.97  void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::read_rows<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&)
+  0.27    296.78     0.81    25823     0.00     0.00  ray_iterator::ray_iterator(double, ray, vec3, double, bool, bool)
+  0.25    297.53     0.76                             jac(double, double const*, double*, double*, void*)
+  0.18    298.06     0.53    50420     0.00     0.00  double std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&)
+  0.17    298.58     0.52        1     0.52   150.80  parse_args(int, char**, args&)
+  0.07    298.80     0.22    25557     0.00     0.00  write_color(char*, vec3 const&)
+  0.07    299.01     0.21      209     0.00     0.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand()
+  0.02    299.06     0.05        1     0.05     0.05  boost::gil::detail::jpeg_decompress_wrapper::jpeg_decompress_deleter(jpeg_decompress_struct*)
+  0.01    299.07     0.02        2     0.01     0.01  boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>::file_deleter(_IO_FILE*)
+  0.00    299.08     0.01                             void boost::gil::writer<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::no_log>::write_rows<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&)
+  0.00    299.08     0.00       17     0.00     0.00  std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >)
+  0.00    299.08     0.00        8     0.00    18.85  decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t)
+  0.00    299.08     0.00        5     0.00     0.01  std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()
+  0.00    299.08     0.00        4     0.00     0.00  std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_fp<char>::format<double, std::__format::_Sink_iter<char> >(double, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const
+  0.00    299.08     0.00        4     0.00     0.00  std::__format::__formatter_fp<char>::parse(std::basic_format_parse_context<char>&)
+  0.00    299.08     0.00        3     0.00     0.00  std::__format::__formatter_int<char>::_M_do_parse(std::basic_format_parse_context<char>&, std::__format::_Pres_type)
+  0.00    299.08     0.00        2     0.00     0.00  boost::gil::image<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, false, std::allocator<unsigned char> >::~image()
+  0.00    299.08     0.00        2     0.00     0.00  std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::_M_format_int<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const
+  0.00    299.08     0.00        2     0.00     0.00  std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const
+  0.00    299.08     0.00        2     0.00     0.00  std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00    299.08     0.00        2     0.00     0.01  std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00    299.08     0.00        2     0.00     0.00  void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)
+  0.00    299.08     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8interval5emptyE
+  0.00    299.08     0.00        1     0.00     0.00  img::~img()
+  0.00    299.08     0.00        1     0.00     0.00  boost::gil::reader_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::reader_backend(boost::gil::detail::file_stream_device<boost::gil::jpeg_tag> const&, boost::gil::image_read_settings<boost::gil::jpeg_tag> const&)
+  0.00    299.08     0.00        1     0.00     0.00  boost::gil::detail::jpeg_compress_wrapper::jpeg_compress_deleter(jpeg_compress_struct*)
+  0.00    299.08     0.00        1     0.00     0.97  void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::apply<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&)
+  0.00    299.08     0.00        1     0.00   150.80  std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const
+  0.00    299.08     0.00        1     0.00     0.00  std::__format::_Sink_iter<char> std::__format::__formatter_str<char>::format<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const
+  0.00    299.08     0.00        1     0.00     0.00  std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00    299.08     0.00        1     0.00     0.00  std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00    299.08     0.00        1     0.00     0.00  std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00    299.08     0.00        1     0.00     0.05  std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00    299.08     0.00        1     0.00     0.00  std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00    299.08     0.00        1     0.00     0.00  std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00    299.08     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)
+  0.00    299.08     0.00        1     0.00     0.00  std::__format::__formatter_str<char>::parse(std::basic_format_parse_context<char>&)
+  0.00    299.08     0.00        1     0.00     0.00  std::__format::_Sink_iter<char> std::__format::__write_padded_as_spec<char, std::__format::_Sink_iter<char> >(std::basic_string_view<std::type_identity<char>::type, std::char_traits<std::type_identity<char>::type> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&, std::__format::_Spec<char> const&, std::__format::_Align)
+  0.00    299.08     0.00        1     0.00   150.80  std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.00% of 299.08 seconds
+
+index % time    self  children    called     name
+                0.00  150.80       8/8           std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >) [4]
+[1]     50.4    0.00  150.80       8         decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+                0.00  150.80       1/1           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [3]
+                0.00    0.00       4/4           std::__format::__formatter_fp<char>::parse(std::basic_format_parse_context<char>&) [41]
+                0.00    0.00       4/4           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_fp<char>::format<double, std::__format::_Sink_iter<char> >(double, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [40]
+                0.00    0.00       3/3           std::__format::__formatter_int<char>::_M_do_parse(std::basic_format_parse_context<char>&, std::__format::_Pres_type) [42]
+                0.00    0.00       2/2           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [45]
+                0.00    0.00       1/1           std::__format::__formatter_str<char>::parse(std::basic_format_parse_context<char>&) [59]
+                0.00    0.00       1/1           std::__format::_Sink_iter<char> std::__format::__formatter_str<char>::format<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [52]
+-----------------------------------------------
+                0.52  150.28       1/1           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [3]
+[2]     50.4    0.52  150.28       1         parse_args(int, char**, args&) [2]
+               17.41  131.91   25315/25315       camera::ray_color(ray&, hittable const&) const [6]
+                0.53    0.21   50420/50420       double std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [17]
+                0.22    0.00   25557/25557       write_color(char*, vec3 const&) [18]
+-----------------------------------------------
+                0.00  150.80       1/1           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[3]     50.4    0.00  150.80       1         std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [3]
+                0.52  150.28       1/1           parse_args(int, char**, args&) [2]
+                0.00    0.00       1/1           std::__format::_Sink_iter<char> std::__format::__write_padded_as_spec<char, std::__format::_Sink_iter<char> >(std::basic_string_view<std::type_identity<char>::type, std::char_traits<std::type_identity<char>::type> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&, std::__format::_Spec<char> const&, std::__format::_Align) [60]
+-----------------------------------------------
+                0.00  150.80       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::format<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&, double&, double&, double&, int&, bool&, int&>(std::basic_format_string<char, std::type_identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<int&>::type, std::type_identity<bool&>::type, std::type_identity<int&>::type>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&, double&, double&, double&, int&, bool&, int&) [5]
+[4]     50.4    0.00  150.80       1         std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >) [4]
+                0.00  150.80       8/8           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+                0.00    0.00       9/17          std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) [58]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]     50.4    0.00  150.80                 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::format<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&, double&, double&, double&, int&, bool&, int&>(std::basic_format_string<char, std::type_identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<double&>::type, std::type_identity<int&>::type, std::type_identity<bool&>::type, std::type_identity<int&>::type>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&, double&, double&, double&, int&, bool&, int&) [5]
+                0.00  150.80       1/1           std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >) [4]
+-----------------------------------------------
+               17.41  131.91   25315/25315       parse_args(int, char**, args&) [2]
+[6]     49.9   17.41  131.91   25315         camera::ray_color(ray&, hittable const&) const [6]
+               94.32    0.00 2626313/2626313     ray_iterator::iter(ray*) [8]
+               21.08   15.71 2644285/2644285     hittable_list::hit(ray const&, interval, hit_record&) const [9]
+                0.81    0.00   25823/25823       ray_iterator::ray_iterator(double, ray, vec3, double, bool, bool) [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]     48.7  145.52    0.00                 func(double, double const*, double*, void*) [7]
+-----------------------------------------------
+               94.32    0.00 2626313/2626313     camera::ray_color(ray&, hittable const&) const [6]
+[8]     31.5   94.32    0.00 2626313         ray_iterator::iter(ray*) [8]
+-----------------------------------------------
+               21.08   15.71 2644285/2644285     camera::ray_color(ray&, hittable const&) const [6]
+[9]     12.3   21.08   15.71 2644285         hittable_list::hit(ray const&, interval, hit_record&) const [9]
+               15.71    0.00 2639039/2639039     img::hit(ray const&, interval, hit_record&) const [10]
+-----------------------------------------------
+               15.71    0.00 2639039/2639039     hittable_list::hit(ray const&, interval, hit_record&) const [9]
+[10]     5.3   15.71    0.00 2639039         img::hit(ray const&, interval, hit_record&) const [10]
+-----------------------------------------------
+                                   1             void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+                0.97    1.02       1/1           std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<img, std::allocator<void>, char const*, double&>(img*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, char const*&&, double&) [12]
+[11]     0.7    0.97    1.02       1+1       void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+                0.00    0.97       1/1           void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::apply<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [13]
+                0.00    0.05       5/5           std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+                0.00    0.00       1/1           boost::gil::reader_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::reader_backend(boost::gil::detail::file_stream_device<boost::gil::jpeg_tag> const&, boost::gil::image_read_settings<boost::gil::jpeg_tag> const&) [50]
+                0.00    0.00       1/2           boost::gil::image<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, false, std::allocator<unsigned char> >::~image() [43]
+                                   1             void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     0.7    0.00    1.99                 std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<img, std::allocator<void>, char const*, double&>(img*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, char const*&&, double&) [12]
+                0.97    1.02       1/1           void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+-----------------------------------------------
+                0.00    0.97       1/1           void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+[13]     0.3    0.00    0.97       1         void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::apply<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [13]
+                0.97    0.00       1/1           void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::read_rows<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [14]
+-----------------------------------------------
+                0.97    0.00       1/1           void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::apply<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [13]
+[14]     0.3    0.97    0.00       1         void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::read_rows<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [14]
+-----------------------------------------------
+                0.81    0.00   25823/25823       camera::ray_color(ray&, hittable const&) const [6]
+[15]     0.3    0.81    0.00   25823         ray_iterator::ray_iterator(double, ray, vec3, double, bool, bool) [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     0.3    0.76    0.00                 jac(double, double const*, double*, double*, void*) [16]
+-----------------------------------------------
+                0.53    0.21   50420/50420       parse_args(int, char**, args&) [2]
+[17]     0.2    0.53    0.21   50420         double std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [17]
+                0.21    0.00     209/209         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [19]
+-----------------------------------------------
+                0.22    0.00   25557/25557       parse_args(int, char**, args&) [2]
+[18]     0.1    0.22    0.00   25557         write_color(char*, vec3 const&) [18]
+-----------------------------------------------
+                0.21    0.00     209/209         double std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [17]
+[19]     0.1    0.21    0.00     209         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [19]
+-----------------------------------------------
+                0.00    0.05       5/5           void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+[20]     0.0    0.00    0.05       5         std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+                0.00    0.05       1/1           std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [22]
+                0.00    0.01       1/2           std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [24]
+                0.00    0.00       1/1           std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [55]
+                0.00    0.00       1/2           std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [46]
+-----------------------------------------------
+                0.05    0.00       1/1           std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [22]
+[21]     0.0    0.05    0.00       1         boost::gil::detail::jpeg_decompress_wrapper::jpeg_decompress_deleter(jpeg_decompress_struct*) [21]
+-----------------------------------------------
+                0.00    0.05       1/1           std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+[22]     0.0    0.00    0.05       1         std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [22]
+                0.05    0.00       1/1           boost::gil::detail::jpeg_decompress_wrapper::jpeg_decompress_deleter(jpeg_decompress_struct*) [21]
+-----------------------------------------------
+                0.02    0.00       2/2           std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [24]
+[23]     0.0    0.02    0.00       2         boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>::file_deleter(_IO_FILE*) [23]
+-----------------------------------------------
+                0.00    0.01       1/2           std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+                0.00    0.01       1/2           boost::gil::writer_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::~writer_backend() [26]
+[24]     0.0    0.00    0.02       2         std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [24]
+                0.02    0.00       2/2           boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>::file_deleter(_IO_FILE*) [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.0    0.01    0.00                 void boost::gil::writer<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::no_log>::write_rows<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     0.0    0.00    0.01                 boost::gil::writer_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::~writer_backend() [26]
+                0.00    0.01       1/2           std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [24]
+                0.00    0.00       1/2           std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [46]
+                0.00    0.00       1/1           std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [54]
+                0.00    0.00       1/1           std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [53]
+-----------------------------------------------
+                0.00    0.00       1/17          std::__format::_Sink_iter<char> std::__format::__write_padded_as_spec<char, std::__format::_Sink_iter<char> >(std::basic_string_view<std::type_identity<char>::type, std::char_traits<std::type_identity<char>::type> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&, std::__format::_Spec<char> const&, std::__format::_Align) [60]
+                0.00    0.00       1/17          std::__format::_Sink_iter<char> std::__format::__formatter_str<char>::format<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [52]
+                0.00    0.00       2/17          std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::_M_format_int<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [44]
+                0.00    0.00       4/17          std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_fp<char>::format<double, std::__format::_Sink_iter<char> >(double, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [40]
+                0.00    0.00       9/17          std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >) [4]
+[39]     0.0    0.00    0.00      17         std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+-----------------------------------------------
+                0.00    0.00       4/4           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[40]     0.0    0.00    0.00       4         std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_fp<char>::format<double, std::__format::_Sink_iter<char> >(double, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [40]
+                0.00    0.00       4/17          std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+-----------------------------------------------
+                0.00    0.00       4/4           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[41]     0.0    0.00    0.00       4         std::__format::__formatter_fp<char>::parse(std::basic_format_parse_context<char>&) [41]
+-----------------------------------------------
+                0.00    0.00       3/3           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[42]     0.0    0.00    0.00       3         std::__format::__formatter_int<char>::_M_do_parse(std::basic_format_parse_context<char>&, std::__format::_Pres_type) [42]
+-----------------------------------------------
+                0.00    0.00       1/2           img::~img() [49]
+                0.00    0.00       1/2           void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+[43]     0.0    0.00    0.00       2         boost::gil::image<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, false, std::allocator<unsigned char> >::~image() [43]
+-----------------------------------------------
+                0.00    0.00       2/2           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [45]
+[44]     0.0    0.00    0.00       2         std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::_M_format_int<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [44]
+                0.00    0.00       2/17          std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+-----------------------------------------------
+                0.00    0.00       2/2           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[45]     0.0    0.00    0.00       2         std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [45]
+                0.00    0.00       2/2           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::_M_format_int<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [44]
+                0.00    0.00       2/2           void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int) [47]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+                0.00    0.00       1/2           boost::gil::writer_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::~writer_backend() [26]
+[46]     0.0    0.00    0.00       2         std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [46]
+-----------------------------------------------
+                0.00    0.00       2/2           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [45]
+[47]     0.0    0.00    0.00       2         void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [149]
+[48]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8interval5emptyE [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [57]
+[49]     0.0    0.00    0.00       1         img::~img() [49]
+                0.00    0.00       1/2           boost::gil::image<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, false, std::allocator<unsigned char> >::~image() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [11]
+[50]     0.0    0.00    0.00       1         boost::gil::reader_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::reader_backend(boost::gil::detail::file_stream_device<boost::gil::jpeg_tag> const&, boost::gil::image_read_settings<boost::gil::jpeg_tag> const&) [50]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [54]
+[51]     0.0    0.00    0.00       1         boost::gil::detail::jpeg_compress_wrapper::jpeg_compress_deleter(jpeg_compress_struct*) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[52]     0.0    0.00    0.00       1         std::__format::_Sink_iter<char> std::__format::__formatter_str<char>::format<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [52]
+                0.00    0.00       1/17          std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::gil::writer_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::~writer_backend() [26]
+[53]     0.0    0.00    0.00       1         std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::gil::writer_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::~writer_backend() [26]
+[54]     0.0    0.00    0.00       1         std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [54]
+                0.00    0.00       1/1           boost::gil::detail::jpeg_compress_wrapper::jpeg_compress_deleter(jpeg_compress_struct*) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [20]
+[55]     0.0    0.00    0.00       1         std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [55]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::shared_ptr<hittable>, std::allocator<std::shared_ptr<hittable> > >::~vector() [110]
+[56]     0.0    0.00    0.00       1         std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::shared_ptr<hittable>, std::allocator<std::shared_ptr<hittable> > >::~vector() [110]
+[57]     0.0    0.00    0.00       1         std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [57]
+                0.00    0.00       1/1           img::~img() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >) [4]
+[58]     0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [1]
+[59]     0.0    0.00    0.00       1         std::__format::__formatter_str<char>::parse(std::basic_format_parse_context<char>&) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [3]
+[60]     0.0    0.00    0.00       1         std::__format::_Sink_iter<char> std::__format::__write_padded_as_spec<char, std::__format::_Sink_iter<char> >(std::basic_string_view<std::type_identity<char>::type, std::char_traits<std::type_identity<char>::type> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&, std::__format::_Spec<char> const&, std::__format::_Align) [60]
+                0.00    0.00       1/17          std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >) [39]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [48] _GLOBAL__sub_I__ZN8interval5emptyE (main.cc) [14] void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::read_rows<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [22] std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+   [2] parse_args(int, char**, args&) [25] void boost::gil::writer<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::no_log>::write_rows<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [46] std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  [18] write_color(char*, vec3 const&) [9] hittable_list::hit(ray const&, interval, hit_record&) const [24] std::_Sp_counted_deleter<_IO_FILE*, void (*)(_IO_FILE*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  [16] jac(double, double const*, double*, double*, void*) [10] img::hit(ray const&, interval, hit_record&) const [56] std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+   [7] func(double, double const*, double*, void*) [6] camera::ray_color(ray&, hittable const&) const [57] std::_Sp_counted_ptr_inplace<img, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+   [8] ray_iterator::iter(ray*) [40] std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_fp<char>::format<double, std::__format::_Sink_iter<char> >(double, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [19] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand()
+  [15] ray_iterator::ray_iterator(double, ray, vec3, double, bool, bool) [44] std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::_M_format_int<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [58] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)
+  [49] img::~img()             [3] std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<std::__format::_Sink_iter<char> >(bool, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [47] void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)
+  [50] boost::gil::reader_backend<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag>::reader_backend(boost::gil::detail::file_stream_device<boost::gil::jpeg_tag> const&, boost::gil::image_read_settings<boost::gil::jpeg_tag> const&) [45] std::basic_format_context<std::__format::_Sink_iter<char>, char>::iterator std::__format::__formatter_int<char>::format<int, std::__format::_Sink_iter<char> >(int, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [41] std::__format::__formatter_fp<char>::parse(std::basic_format_parse_context<char>&)
+  [11] void boost::gil::default_construct_pixels<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [52] std::__format::_Sink_iter<char> std::__format::__formatter_str<char>::format<std::__format::_Sink_iter<char> >(std::basic_string_view<char, std::char_traits<char> >, std::basic_format_context<std::__format::_Sink_iter<char>, char>&) const [42] std::__format::__formatter_int<char>::_M_do_parse(std::basic_format_parse_context<char>&, std::__format::_Pres_type)
+  [43] boost::gil::image<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >, false, std::allocator<unsigned char> >::~image() [20] std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [59] std::__format::__formatter_str<char>::parse(std::basic_format_parse_context<char>&)
+  [23] boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>::file_deleter(_IO_FILE*) [1] decltype(auto) std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_visit<std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}>(std::__format::_Formatting_scanner<std::__format::_Sink_iter<char>, char>::_M_format_arg(unsigned long)::{lambda(auto:1&)#1}&&, std::__format::_Arg_t) [60] std::__format::_Sink_iter<char> std::__format::__write_padded_as_spec<char, std::__format::_Sink_iter<char> >(std::basic_string_view<std::type_identity<char>::type, std::char_traits<std::type_identity<char>::type> >, unsigned long, std::basic_format_context<std::__format::_Sink_iter<char>, char>&, std::__format::_Spec<char> const&, std::__format::_Align)
+  [51] boost::gil::detail::jpeg_compress_wrapper::jpeg_compress_deleter(jpeg_compress_struct*) [53] std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [39] std::__format::_Sink<char>::_M_write(std::basic_string_view<char, std::char_traits<char> >)
+  [21] boost::gil::detail::jpeg_decompress_wrapper::jpeg_decompress_deleter(jpeg_decompress_struct*) [54] std::_Sp_counted_deleter<jpeg_compress_struct*, void (*)(jpeg_compress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [17] double std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&)
+  [13] void boost::gil::reader<boost::gil::detail::file_stream_device<boost::gil::jpeg_tag>, boost::gil::jpeg_tag, boost::gil::detail::read_and_no_convert>::apply<boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > >(boost::gil::image_view<boost::gil::memory_based_2d_locator<boost::gil::memory_based_step_iterator<boost::gil::pixel<unsigned char, boost::gil::layout<boost::mp11::mp_list<boost::gil::red_t, boost::gil::green_t, boost::gil::blue_t>, boost::mp11::mp_list<std::integral_constant<int, 0>, std::integral_constant<int, 1>, std::integral_constant<int, 2> > > >*> > > const&) [55] std::_Sp_counted_deleter<jpeg_decompress_struct*, void (*)(jpeg_decompress_struct*), std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [4] std::vformat[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >, std::basic_format_args<std::basic_format_context<std::__format::_Sink_iter<char>, char> >)

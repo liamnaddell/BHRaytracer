@@ -1,0 +1,12 @@
+debug
+*.ppm
+*.jpg
+*.lyx~
+openmp
+mpi
+release
+prof
+eagle.webp
+STScI-H-CANDELS_UDF-16300x9000.png
+tags
+html

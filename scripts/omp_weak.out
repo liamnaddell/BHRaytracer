@@ -1,0 +1,201 @@
+|core|eps|time|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 1 -e 6.0000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|1|6.0000000000|182.922108|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 2 -e 5.8500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|2|5.8500000000|95.428450|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 3 -e 5.7000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|3|5.7000000000|67.931564|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 4 -e 5.5500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|4|5.5500000000|53.020900|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 5 -e 5.4000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|5|5.4000000000|44.803376|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 6 -e 5.2500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|6|5.2500000000|38.490883|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 7 -e 5.1000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|7|5.1000000000|35.038133|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 8 -e 4.9500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|8|4.9500000000|31.086271|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 9 -e 4.8000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|9|4.8000000000|28.675864|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 10 -e 4.6500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|10|4.6500000000|26.790850|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 11 -e 4.5000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|11|4.5000000000|25.133959|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 12 -e 4.3500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|12|4.3500000000|26.057198|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 13 -e 4.2000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|13|4.2000000000|23.333624|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 14 -e 4.0500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|14|4.0500000000|23.075552|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 15 -e 3.9000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|15|3.9000000000|21.736766|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 16 -e 3.7500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|16|3.7500000000|21.666093|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 17 -e 3.6000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|17|3.6000000000|21.386616|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 18 -e 3.4500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|18|3.4500000000|21.873723|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 19 -e 3.3000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|19|3.3000000000|20.985880|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 20 -e 3.1500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|20|3.1500000000|21.492727|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 21 -e 3.0000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|21|3.0000000000|22.529722|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 22 -e 2.8500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|22|2.8500000000|22.163668|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 23 -e 2.7000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|23|2.7000000000|21.938183|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 24 -e 2.5500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|24|2.5500000000|24.158321|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 25 -e 2.4000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|25|2.4000000000|23.892689|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 26 -e 2.2500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|26|2.2500000000|24.088436|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 27 -e 2.1000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|27|2.1000000000|23.869930|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 28 -e 1.9500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|28|1.9500000000|25.762380|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 29 -e 1.8000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|29|1.8000000000|26.892399|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 30 -e 1.6500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|30|1.6500000000|28.810913|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 31 -e 1.5000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|31|1.5000000000|30.811568|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 32 -e 1.3500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|32|1.3500000000|32.418514|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 33 -e 1.2000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|33|1.2000000000|35.321979|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 34 -e 1.0500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|34|1.0500000000|38.393278|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 35 -e .9000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|35|.9000000000|43.332111|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 36 -e .7500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|36|.7500000000|50.402616|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 37 -e .6000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|37|.6000000000|58.065156|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 38 -e .4500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|38|.4500000000|76.258528|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 39 -e .3000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|39|.3000000000|92.881214|
+++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 5 -c 40 -e .1500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|40|.1500000000|96.094108|

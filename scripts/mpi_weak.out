@@ -1,0 +1,123 @@
+
+The following have been reloaded with a version change:
+  1) NiaEnv/2019b => NiaEnv/2022a
+
+|core|eps|time|
+++ mpirun -c 1 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 6.0000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|1|6.0000000000|37.379402|
+++ mpirun -c 2 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 5.6250000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|2|5.6250000000|20.089365|
+++ mpirun -c 3 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 5.2500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|3|5.2500000000|15.003739|
+++ mpirun -c 4 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 4.8750000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|4|4.8750000000|12.189301|
+++ mpirun -c 5 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 4.5000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|5|4.5000000000|10.731451|
+++ mpirun -c 6 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 4.1250000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|6|4.1250000000|9.859421|
+++ mpirun -c 7 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 3.7500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|7|3.7500000000|9.332257|
+++ mpirun -c 8 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 3.3750000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|8|3.3750000000|9.095193|
+++ mpirun -c 9 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 3.0000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|9|3.0000000000|9.214772|
+++ mpirun -c 10 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 2.6250000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|10|2.6250000000|9.342934|
+++ mpirun -c 11 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 2.2500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|11|2.2500000000|9.819685|
+++ mpirun -c 12 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 1.8750000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|12|1.8750000000|10.981109|
+++ mpirun -c 13 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 1.5000000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|13|1.5000000000|12.474134|
+++ mpirun -c 14 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e 1.1250000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|14|1.1250000000|15.580738|
+++ mpirun -c 15 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e .7500000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|15|.7500000000|21.371051|
+++ mpirun -c 16 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -c 1 -e .3750000000
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|16|.3750000000|39.142239|
+
+scontrol show job 14142777
+JobId=14142777 JobName=liam-mpi-weak
+   UserId=naddelll(3145209) GroupId=mponce(6006719) MCS_label=N/A
+   Priority=2003538 Nice=0 Account=def-mponce-ac QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:04:17 TimeLimit=00:45:00 TimeMin=N/A
+   SubmitTime=2025-02-01T16:09:45 EligibleTime=2025-02-01T16:09:45
+   AccrueTime=2025-02-01T16:09:45
+   StartTime=2025-02-01T16:09:48 EndTime=2025-02-01T16:14:05 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-02-01T16:09:48 Scheduler=Main
+   Partition=compute AllocNode:Sid=nia-login02:133407
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia0899
+   BatchHost=nia0899
+   NumNodes=1 NumCPUs=80 NumTasks=16 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=16,mem=175000M,node=1,billing=8
+   AllocTRES=cpu=80,mem=175000M,node=1,billing=40
+   Socks/Node=* NtasksPerN:B:S:C=16:0:*:* CoreSpec=*
+   MinCPUsNode=16 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/m/mponce/naddelll/cscd71/final/mpi_weak.sh
+   WorkDir=/gpfs/fs0/scratch/m/mponce/naddelll
+   Comment=/opt/slurm/bin/sbatch --export=NONE /home/m/mponce/naddelll/cscd71/final/mpi_weak.sh /home/m/mponce/naddelll/cscd71/final/ 
+   StdErr=/gpfs/fs0/scratch/m/mponce/naddelll/slurm-14142777.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/m/mponce/naddelll/slurm-14142777.out
+   MailUser=naddelll@scinet.local MailType=FAIL
+   
+
+sacct -j 14142777
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+14142777     liam-mpi-+ def-mponc+   00:04:17                        00:13.273  34:08.864      0:0 
+14142777.ba+      batch def-mponc+   00:04:17   4416036K    706296K  00:12.272  34:08.863      0:0 
+14142777.ex+     extern def-mponc+   00:04:18    638968K     15340K  00:01.001   00:00:00      0:0 

@@ -1,0 +1,201 @@
+|core|width|time|
+++ mpirun -c 1 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 303.5786553695
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|1|51840.0000000000|145.555226|
+++ mpirun -c 2 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 429.3250516705
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|2|103680.0000000000|147.126954|
+++ mpirun -c 3 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 525.8136551934
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|3|155520.0000000000|153.328476|
+++ mpirun -c 4 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 607.1573107390
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|4|207360.0000000000|155.709053|
+++ mpirun -c 5 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 678.8225099242
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|5|259200.0000000000|157.391356|
+++ mpirun -c 6 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 743.6128024555
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|6|311040.0000000000|157.975547|
+++ mpirun -c 7 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 803.1936254551
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|7|362880.0000000000|159.181385|
+++ mpirun -c 8 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 858.6501033411
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|8|414720.0000000000|159.191289|
+++ mpirun -c 9 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 910.7359661085
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|9|466560.0000000000|159.356702|
+++ mpirun -c 10 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 959.9999999789
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|10|518400.0000000000|160.382956|
+++ mpirun -c 11 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1006.8564942213
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|11|570240.0000000000|162.047177|
+++ mpirun -c 12 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1051.6273103869
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|12|622080.0000000000|162.603665|
+++ mpirun -c 13 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1094.5684080712
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|13|673920.0000000000|162.396702|
+++ mpirun -c 14 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1135.8873183302
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|14|725760.0000000000|162.436329|
+++ mpirun -c 15 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1175.7550765102
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|15|777600.0000000000|160.931835|
+++ mpirun -c 16 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1214.3146214780
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|16|829440.0000000000|163.171622|
+++ mpirun -c 17 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1251.6868617715
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|17|881280.0000000000|166.623506|
+++ mpirun -c 18 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1287.9751550117
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|18|933120.0000000000|169.849404|
+++ mpirun -c 19 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1323.2686801717
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|19|984960.0000000000|174.646520|
+++ mpirun -c 20 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1357.6450198484
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|20|1036800.0000000000|177.223176|
+++ mpirun -c 21 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1391.1721676037
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|21|1088640.0000000000|176.509798|
+++ mpirun -c 22 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1423.9101094912
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|22|1140480.0000000000|175.978273|
+++ mpirun -c 23 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1455.9120852260
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|23|1192320.0000000000|175.769011|
+++ mpirun -c 24 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1487.2256049111
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|24|1244160.0000000000|174.319952|
+++ mpirun -c 25 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1517.8932768476
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|25|1296000.0000000000|177.853951|
+++ mpirun -c 26 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1547.9534876394
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|26|1347840.0000000000|176.045183|
+++ mpirun -c 27 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1577.4409655803
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|27|1399680.0000000000|174.756138|
+++ mpirun -c 28 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1606.3872509102
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|28|1451520.0000000000|178.083364|
+++ mpirun -c 29 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1634.8210910931
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|29|1503360.0000000000|176.086451|
+++ mpirun -c 30 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1662.7687752297
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|30|1555200.0000000000|182.218788|
+++ mpirun -c 31 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1690.2544186822
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|31|1607040.0000000000|177.096439|
+++ mpirun -c 32 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1717.3002066822
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|32|1658880.0000000000|179.566073|
+++ mpirun -c 33 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1743.9266039220
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|33|1710720.0000000000|177.068363|
+++ mpirun -c 34 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1770.1525357615
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|34|1762560.0000000000|180.810748|
+++ mpirun -c 35 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1795.9955456122
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|35|1814400.0000000000|178.316022|
+++ mpirun -c 36 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1821.4719322171
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|36|1866240.0000000000|181.567647|
+++ mpirun -c 37 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1846.5968698800
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|37|1918080.0000000000|184.554431|
+++ mpirun -c 38 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1871.3845141623
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|38|1969920.0000000000|178.109383|
+++ mpirun -c 39 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1895.8480951391
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|39|2021760.0000000000|180.955072|
+++ mpirun -c 40 /home/m/mponce/naddelll/cscd71/final//release/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 1919.9999999579
+++ grep tock
+++ cut '-d ' -f3
+++ tail -n1
+|40|2073600.0000000000|175.464985|
