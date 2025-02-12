@@ -40,7 +40,7 @@ void decomp::perform_decomp() {
         rows_per_proc[i].end_row = current_row;
         previous_row = current_row;
     }
-    assert(current_row == height);
+    assert(current_row == (int)height);
 
     // step 3: build the displs array
     // displs is where each process will write it's image data to in the output

@@ -7,6 +7,10 @@
 class img : public hittable {
   public:
     bool hit(const ray &r, interval ray_t, hit_record &rec) const override;
+    /**
+     * @param filename The filename of the image to load
+     * @param z_loc How close/far away do we embed the image into the scene
+     */
     img(const char *filename, double z_loc);
 
   private:

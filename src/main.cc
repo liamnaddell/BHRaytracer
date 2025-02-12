@@ -18,26 +18,27 @@
 namespace bg = boost::gil;
 
 struct args {
-    //-i img_name
+    /** -i img_name */
     string img_name = "../squares.jpg";
-    //-b <loc>
+    /** -b black hole loc */
     double bh_loc = -200.0;
-    //-B <bg_loc>
+    /** -B background loc */
     double bg_loc = -500.0;
-    //-M mass
+    /** -M mass */
     double mass = 10;
-    //-e epsilon
+    /** -e epsilon */
     double epsilon = 2;
-    //-W <width>
+    /** -W width */
     int width = 900;
-    //-d
+    /** -d (extra debugging output) */
     bool debug = false;
-    //-s <snum>
+    /** -s snum */
     int samples = 1;
+    /** -S (waits for GDB to attach) */
     bool wait_for_attach = false;
-    //-c <cores>
+    /** -c cores */
     int cores = 0;
-    //-T
+    /** -T (output timing information) */
     bool time = false;
 };
 
@@ -147,15 +148,12 @@ int main(int argc, char *argv[]) {
             puts("Arg parse failed");
             return -1;
         }
-	
-        std::cerr << "Image name: " <<as.img_name <<
-        "\nbh_loc: "<<as.bh_loc <<
-        "\nbg_loc: "<<as.bg_loc <<
-        "\nmass: "<<as.mass <<
-        "\nepsilon: "<<as.epsilon <<
-        "\nwidth: "<<as.width <<
-        "\ndebug: "<<as.debug <<
-        "\nsamples: "<<as.samples << "\n";
+
+        std::cerr << "Image name: " << as.img_name << "\nbh_loc: " << as.bh_loc
+                  << "\nbg_loc: " << as.bg_loc << "\nmass: " << as.mass
+                  << "\nepsilon: " << as.epsilon << "\nwidth: " << as.width
+                  << "\ndebug: " << as.debug << "\nsamples: " << as.samples
+                  << "\n";
     }
     TickTock tt;
     tt.tick();

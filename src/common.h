@@ -8,15 +8,13 @@
 #include <limits>
 #include <memory>
 #include <random>
-#include <string>
 #include <sstream>
+#include <string>
 
 #include <boost/optional.hpp>
 using std::make_shared;
-//using std::nullopt;
-//using std::optional;
-using boost::optional;
 using boost::none;
+using boost::optional;
 using std::shared_ptr;
 
 // Constants
@@ -50,7 +48,6 @@ inline bool ends_with(const char *s, const char *ext) {
     return strncmp(sext, ext, extlen) == 0;
 }
 
-//using fmt::format;
 using std::string;
 using std::stringstream;
 
