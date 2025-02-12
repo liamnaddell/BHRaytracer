@@ -49,11 +49,9 @@ point3 ray_iterator::transfer_out(point3 pt) {
 }
 
 string ray_iterator::fmt() {
-	stringstream s;
-s << "m_r: " << m_r.fmt()
-    <<"\nu: " <<m_y[0]
-    <<"\nu': "<<m_y[1]
-    <<"\nm_t:"<< m_t;
+    stringstream s;
+    s << "m_r: " << m_r.fmt() << "\nu: " << m_y[0] << "\nu': " << m_y[1]
+      << "\nm_t:" << m_t;
     return s.str();
 }
 

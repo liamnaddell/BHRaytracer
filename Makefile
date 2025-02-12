@@ -25,4 +25,4 @@ distclean:
 #cppcheck:
 #	cppcheck --language=c++ --std=c++17 main.cc mov_avg.cc mov_avg.h
 format:
-	find . -iname '*.h' -o -iname '*.cc' | xargs clang-format -i
+	find src -iname '*.h' -o -iname '*.cc' | xargs clang-format -i

@@ -3,6 +3,10 @@
 
 class sphere : public hittable {
   public:
+    /**
+     * @param center the center of the sphere
+     * @param radius the radius of the sphere
+     */
     sphere(const point3 &center, double radius)
         : center(center), radius(std::fmax(0, radius)) {}
 

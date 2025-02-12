@@ -2,9 +2,13 @@
 #define マールセロ_H
 #include <sys/time.h>
 
+/** Used for recording program duration */
 struct TickTock {
+    /** Stores the start time */
     struct timeval time;
+    /** Begin recording time */
     void tick() { gettimeofday(&time, NULL); }
+    /** End recording time */
     void tock(const char *msg) const {
         struct timeval now;
         gettimeofday(&now, NULL);

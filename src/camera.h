@@ -5,28 +5,47 @@
 
 class camera {
   public:
-    /* Public Camera Parameters Here */
-    double aspect_ratio = 1.0; /* Ratio of image width over height */
-    int image_width = 100;     /* Rendered image width in pixel count */
-    int samples_per_pixel = 1; /* Count of random samples for each pixel */
-    // origin of black hole
+    /** Ratio of image width/height */
+    double aspect_ratio = 1.0;
+    /** Rendered image width in pixel count */
+    int image_width = 100;
+    /** Count of random samples for each pixel */
+    int samples_per_pixel = 1;
+    /** Origin of the black hole */
     point3 bh_origin;
-    // extra prints
+    /** Enable extra debug printing */
     bool debug = true;
-    // mass of black hole
+    /** Mass of the black hole */
     double bh_mass;
-    // step size for simulation
+    /** step size for simulation */
     double epsilon;
 
+    /**
+     * Configures some supplied black hole parameters
+     *
+     * @param o Black hole origin
+     * @param M Black hole mass
+     * @param epsilon simulation step size
+     */
     void setup_hole(point3 o, double M, double epsilon);
 
+    /** Enable debugging */
     void set_debug(bool d) { debug = d; }
 
-    // cast a single ray through pixel i,j in the viewplane for debugging
-    // purposes
+    /**
+     * cast a single ray through pixel i,j in the viewplane for debugging
+     * purposes
+     */
     void debug_ray(const hittable &world, int i, int j);
 
-    // render entire image to out_pixels.
+    /**
+     * Performs the actual image rendering
+     *
+     * @param world The scene to render
+     * @param out_pixels The 8-bit rgb buffer to render into
+     * @param proc_num the MPI process number of our process
+     * @param wa Used for determining what part of the scene to render
+     */
     void render(const hittable &world, char *out_pixels, int proc_num,
                 struct work_amt wa);
 

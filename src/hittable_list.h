@@ -10,13 +10,18 @@ using std::shared_ptr;
 
 class hittable_list : public hittable {
   public:
+    /** The hittable objects */
     std::vector<shared_ptr<hittable>> objects;
 
+    /** Default constructor */
     hittable_list() {}
+    /** @param object An initial object */
     hittable_list(shared_ptr<hittable> object) { add(object); }
 
+    /** Remove all objects from the list */
     void clear() { objects.clear(); }
 
+    /** Add an object to the list */
     void add(shared_ptr<hittable> object) { objects.push_back(object); }
 
     bool hit(const ray &r, interval ray_t, hit_record &rec) const override {
