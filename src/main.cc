@@ -43,6 +43,13 @@ struct args {
 };
 
 void help() {
+/// @brief Function to display help on supported flags
+///
+/// This function displays help on how to use the raytracer with command line arguments.
+///
+/// @param nothing
+/// @return nothing
+    
     std::cout << R"(
   -i <img_name>:
     default ../squares.jpg
@@ -67,7 +74,16 @@ void help() {
               << '\n';
 }
 
+
 bool parse_args(int argc, char *argv[], struct args &as) {
+/// @brief Function to parse command line arguments
+///
+/// This function process the command line arguments and identifies which parameters have been passed into the program.
+///
+/// @param argc  number of command line arguments passed to the program
+/// @param argv array containing all the command line arguments used when calling the program
+/// @return true if a volid argumment is indicated, false if not.
+
     int c;
 
     opterr = 0;
@@ -124,6 +140,7 @@ bool parse_args(int argc, char *argv[], struct args &as) {
     return true;
 }
 
+
 // Wanted/needed CLI arguments:
 // 1. bh location on the z axis
 // 2. bg location on the z axis
@@ -133,6 +150,16 @@ bool parse_args(int argc, char *argv[], struct args &as) {
 // 6. max steps (default: 2000 / epsilon)
 // 7. single ray debug mode.
 int main(int argc, char *argv[]) {
+/// @brief Main driver, execution entry point.
+///
+/// Mainly in charge of:
+///  - Program arguments parsing  and configuration
+///  - Dividing up the image into scanlines to be rendered by specific processes
+///  - Setting up openmp and mpi
+///  - Gathering pixels after each MPI process has finished rendering
+///  - Image output.
+
+
     hittable_list world;
     int x, y;
     bool single_ray = false;

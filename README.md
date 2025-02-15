@@ -1,6 +1,6 @@
-# Ray tracing black holes
+# Ray tracing Black Holes
 
-This project is a parallel open-source implementation of a ray-tracer in the presence of a black hole geometry.
+This project is a parallel open-source implementation of a *ray-tracer* in the presence of a *black hole geometry*.
 The implementation uses a few different techniques usually present in parallel scientific computing,
 such as, mathematical approximations, utilization of scientific libraries, shared-memory and distributed-memory parallelism.
 
