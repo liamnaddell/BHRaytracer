@@ -151,6 +151,14 @@ bool parse_args(int argc, char *argv[], struct args &as) {
 // 7. single ray debug mode.
 int main(int argc, char *argv[]) {
 /// @brief Main driver, execution entry point.
+///
+/// Mainly in charge of:
+///  - Program arguments parsing  and configuration
+///  - Dividing up the image into scanlines to be rendered by specific processes
+///  - Setting up openmp and mpi
+///  - Gathering pixels after each MPI process has finished rendering
+///  - Image output.
+
 
     hittable_list world;
     int x, y;
