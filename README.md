@@ -8,8 +8,8 @@ such as, mathematical approximations, utilization of scientific libraries, share
 ## Installation
 ### Requirements
 * Need a recent boost version. Version 1.86.0 was chosen for the project. Later (and some earlier) versions are likely to work, but require you to change CMakeLists.txt. We tried compiling with some 1.7* versions, but were not able to compile GIL. Only boost headers are required, specifically GIL.
-* `source teachsetup` on the scinet TEACH cluster
-* `source niagarasetup` on the scinet TEACH cluster
+* `source teachsetup` on [SciNet's Niagara cluster](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
+* `source niagarasetup` on [SciNet's Teach cluster](https://docs.scinet.utoronto.ca/index.php/Teach)
 * See these scripts for the versions of libraries required and tested on.
 
 ### Building
