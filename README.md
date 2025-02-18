@@ -94,7 +94,7 @@ Thr oriignal imaga and resulting one from the previous command, are shown for re
      alt="original test image"
      style="width: 45%;" />
 <img src="squares_raytraced.jpg"
-     alt="original test image"
+     alt="raytraced test image"
      style="width: 45%;" />
 
 ### Examples
