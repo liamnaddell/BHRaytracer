@@ -88,7 +88,7 @@ For instance, the following command will run the code in 2 processes and 40 thre
 mpirun -np 2 ./main -c 40 -i image.jpg
 ```
 
-Thr original image and resulting one from the previous command, are shown for reference bellow:
+Thr original image and resulting one from executing the previous command, for reference are shown bellow:
 
 <img src="squares.jpg"
      alt="original test image"
