@@ -80,7 +80,7 @@ You can run `./main -h` for an updated list of help options after building.
     default 1
 ```
 
-After building with MPI, you can run the binary using `mpirun -np NP ./main <options>`, where `NP` reoresents the *number of processes* to use.
+After building with MPI, you can run the binary using `mpirun -np NP ./main <options>`, where `NP` represents the *number of processes* to use.
 When supplying `-np` to `mpirun`, this controls the number of MPI worker processes. When supplying `-c` to `./main`, this controls the number of *OMP threads*.
 These options work concurrently when built with OpenMP and MPI support.
 For instance, the following command will run the code in 2 processes and 40 threats each:
