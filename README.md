@@ -88,6 +88,15 @@ For instance, the following command will run the code in 2 processes and 40 thre
 mpirun -np 2 ./main -c 40 -i image.jpg
 ```
 
+Thr oriignal imaga and resulting one from the previous command, are shown for reference bellow:
+
+<img src="squares.jpg"
+     alt="original test image"
+     style="width: 45%;" />
+<img src="squares_raytraced.jpg"
+     alt="original test image"
+     style="width: 45%;" />
+
 ### Examples
 
 As for how to create the actual images themselves, they were done with pretty high settings:
