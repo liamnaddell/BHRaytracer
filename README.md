@@ -8,8 +8,8 @@ such as, mathematical approximations, utilization of scientific libraries, share
 ## Installation
 ### Requirements
 * Need a recent boost version. Version 1.86.0 was chosen for the project. Later (and some earlier) versions are likely to work, but require you to change CMakeLists.txt. We tried compiling with some 1.7* versions, but were not able to compile GIL. Only boost headers are required, specifically GIL.
-* `source teachsetup` on the scinet TEACH cluster
-* `source niagarasetup` on the scinet TEACH cluster
+* `source teachsetup` on [SciNet's Niagara cluster](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
+* `source niagarasetup` on [SciNet's Teach cluster](https://docs.scinet.utoronto.ca/index.php/Teach)
 * See these scripts for the versions of libraries required and tested on.
 
 ### Building
@@ -80,13 +80,22 @@ You can run `./main -h` for an updated list of help options after building.
     default 1
 ```
 
-After building with MPI, you can run the binary using `mpirun -np NP ./main <options>`, where `NP` reoresents the *number of processes* to use.
+After building with MPI, you can run the binary using `mpirun -np NP ./main <options>`, where `NP` represents the *number of processes* to use.
 When supplying `-np` to `mpirun`, this controls the number of MPI worker processes. When supplying `-c` to `./main`, this controls the number of *OMP threads*.
 These options work concurrently when built with OpenMP and MPI support.
 For instance, the following command will run the code in 2 processes and 40 threats each:
 ```
 mpirun -np 2 ./main -c 40 -i image.jpg
 ```
+
+Thr original image and resulting one from executing the previous command, for reference are shown bellow:
+
+<img src="squares.jpg"
+     alt="original test image"
+     style="width: 45%;" />
+<img src="squares_raytraced.jpg"
+     alt="raytraced test image"
+     style="width: 45%;" />
 
 ### Examples
 
