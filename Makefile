@@ -2,17 +2,26 @@ JLEVEL=-j4
 all: debug release openmp
 CARGS=-DBOOST_ROOT=${HOME}/sysroot  -DCMAKE_MODULE_PATH=${HOME}/sysroot/lib64/cmake/fmt/
 
+### Generate debug version of the code
 debug: dirs
 	cd debug && cmake ${CARGS} .. && make $(JLEVEL)
 
+### Generate OMP shared-memory parallelism version of the code
 openmp: dirs
 	cd openmp && cmake ${CARGS} -DCMAKE_BUILD_TYPE=Release -DENABLE_MPI=False -DENABLE_OPENMP=True .. && make $(JLEVEL)
 
+### Generate MPI+OMP parallelism version of the code
 release: dirs
 	cd release && cmake ${CARGS} -DCMAKE_BUILD_TYPE=Release -DENABLE_MPI=True -DENABLE_OPENMP=True .. && make $(JLEVEL)
 
 dirs:
 	mkdir -p debug release openmp
+
+
+### Generate documentation with Doxygen
+docs:
+    doxygen Doxyfile
+
 
 clean:
 	cd debug && make clean
