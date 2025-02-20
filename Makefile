@@ -26,11 +26,13 @@ docs:
 help: Makefile
 	@sed -n 's/^###//p' $<
 
+### clean: Remove auxiliary object files
 clean:
 	cd debug && make clean
 	cd release && make clean
 	cd openmp && make clean
 
+### distclean: Remove all builds
 distclean:
 	-rm -rf debug release openmp
 
