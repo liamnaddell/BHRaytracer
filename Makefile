@@ -20,7 +20,7 @@ dirs:
 
 ### Generate documentation with Doxygen
 docs:
-    doxygen Doxyfile
+	doxygen Doxyfile
 
 
 clean:
