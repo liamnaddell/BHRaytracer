@@ -22,6 +22,9 @@ dirs:
 docs:
 	doxygen Doxyfile
 
+### Makefile help
+help: Makefile
+	@sed -n 's/^###//p' $<
 
 clean:
 	cd debug && make clean
