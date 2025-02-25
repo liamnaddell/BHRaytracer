@@ -8,15 +8,22 @@ such as, mathematical approximations, utilization of scientific libraries, share
 ## Installation
 ### Requirements
 * Need a recent boost version. Version 1.86.0 was chosen for the project. Later (and some earlier) versions are likely to work, but require you to change CMakeLists.txt. We tried compiling with some 1.7* versions, but were not able to compile GIL. Only boost headers are required, specifically GIL.
-* `source niagarasetup` on [SciNet's Niagara supercomputer](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
-* `source teachsetup` on [SciNet's Teach cluster](https://docs.scinet.utoronto.ca/index.php/Teach)
+* `source scripts/niagarasetup` on [SciNet's Niagara supercomputer](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
+* `source scripts/teachsetup` on [SciNet's Teach cluster](https://docs.scinet.utoronto.ca/index.php/Teach)
 * See these scripts for the versions of libraries required and tested on.
 
 ### Building
-A Makefile is provided to build across multiple different build styles. Support exists for MPI, OpenMP, or a hybrid of the two. Support additionally exists for Release builds, and Debug builds.
+A sample Makefile is provided to build across multiple different build styles. Support exists for MPI, OpenMP, or a hybrid of the two. Support additionally exists for Release builds, and Debug builds.
 
-* `source teachsetup`  (this would guarantee that the necessary requirements are present in the system)
-* `cmake -DENABLE_OPENMP=True -DENABLE_MPI=True -DCMAKE_BUILD_TYPE=Release`
+#### Manual build steps:
+
+* See `scripts/niagarasetup` or `scripts/teachsetup` for the versions of libraries required. 
+* `mkdir release && cd release && cmake -DENABLE_OPENMP=True -DENABLE_MPI=True -DCMAKE_BUILD_TYPE=Release ..`
+* `make`
+
+#### Finding Boost
+
+Since your system might not necessarily come with a convenient boost location, our `Makefile` has a sample BOOST_ROOT parameter which helps you point CMake at the correct boost location. If your system has boost installed, this parameter can be removed.
 
 
 ### Custom Builds
@@ -59,7 +66,7 @@ You can run `./main -h` for an updated list of help options after building.
 
 ```
   -i <img_name>:
-    default ../squares.jpg
+    default ../data/squares.jpg
   -b <black hole loc>
     default -400
   -B <background loc>
@@ -90,10 +97,10 @@ mpirun -np 2 ./main -c 40 -i image.jpg
 
 Thr original image and resulting one from executing the previous command, for reference are shown bellow:
 
-<img src="squares.jpg"
+<img src="data/squares.jpg"
      alt="original test image"
      style="width: 45%;" />
-<img src="squares_raytraced.jpg"
+<img src="data/squares_raytraced.jpg"
      alt="raytraced test image"
      style="width: 45%;" />
 

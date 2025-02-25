@@ -19,7 +19,7 @@ namespace bg = boost::gil;
 
 struct args {
     /** -i img_name */
-    string img_name = "../squares.jpg";
+    string img_name = "../data/squares.jpg";
     /** -b black hole loc */
     double bh_loc = -200.0;
     /** -B background loc */
@@ -52,7 +52,7 @@ void help() {
     
     std::cout << R"(
   -i <img_name>:
-    default ../squares.jpg
+    default ../data/squares.jpg
   -b <black hole loc>
     default -400
   -B <background loc>
