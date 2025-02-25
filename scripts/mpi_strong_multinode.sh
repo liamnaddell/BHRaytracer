@@ -9,7 +9,7 @@ FINAL=$1
 EXE=$1/release/main
 cd $SLURM_SUBMIT_DIR
 
-source $FINAL/niagrasetup
+source $FINAL/scripts/niagrasetup
 
 if [ ! -f $EXE ]; then
     echo "Forgot to compile final, was looking for: '$EXE'"
