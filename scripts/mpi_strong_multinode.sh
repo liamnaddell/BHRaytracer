@@ -9,7 +9,7 @@ FINAL=$1
 EXE=$1/release/main
 cd $SLURM_SUBMIT_DIR
 
-source $FINAL/scripts/niagrasetup
+source $FINAL/scripts/niagarasetup
 
 if [ ! -f $EXE ]; then
     echo "Forgot to compile final, was looking for: '$EXE'"
@@ -19,7 +19,7 @@ if [ ! -f $EXE ]; then
 fi
 
 #Pretty grind-y settings.
-args="-i $FINAL/bgedit.jpg -T -s 10"
+args="-i $FINAL/data/squares.jpg -T -s 10"
 
 function run_program() {
     export procs=$1
@@ -37,5 +37,6 @@ function run_with_num_cores() {
 }
 
 echo "Ready to begin"
+set -x
 run_with_num_cores $(seq 1 8)
 echo "Done!"

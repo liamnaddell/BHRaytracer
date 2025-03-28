@@ -8,7 +8,7 @@
 FINAL=$1
 EXE=$1/openmp/main
 
-source $FINAL/scripts/niagrasetup
+source $FINAL/scripts/niagarasetup
 
 if [ ! -f $EXE ]; then
     echo "Forgot to compile final, was looking for: '$EXE'"
@@ -18,7 +18,7 @@ if [ ! -f $EXE ]; then
 fi
 
 #Pretty grind-y settings.
-args="-i $FINAL/bgedit.jpg -T -s 3"
+args="-i $FINAL/data/squares.jpg -T -s 3"
 
 function run_program() {
     # Run the program on a fixed work size, then scrape the amount of time output by the tracer.

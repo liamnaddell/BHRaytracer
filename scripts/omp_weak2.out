@@ -1,201 +1,40 @@
 |core|width|time|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 1 -W 303.5786553695
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|1|51840.0000000000|144.564312|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 2 -W 429.3250516705
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|2|103680.0000000000|145.338075|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 3 -W 525.8136551934
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|3|155520.0000000000|151.138568|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 4 -W 607.1573107390
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|4|207360.0000000000|153.607320|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 5 -W 678.8225099242
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|5|259200.0000000000|155.181441|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 6 -W 743.6128024555
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|6|311040.0000000000|155.746290|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 7 -W 803.1936254551
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|7|362880.0000000000|157.417314|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 8 -W 858.6501033411
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|8|414720.0000000000|158.312900|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 9 -W 910.7359661085
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|9|466560.0000000000|158.348699|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 10 -W 959.9999999789
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|10|518400.0000000000|157.974787|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 11 -W 1006.8564942213
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|11|570240.0000000000|160.123415|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 12 -W 1051.6273103869
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|12|622080.0000000000|160.561485|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 13 -W 1094.5684080712
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|13|673920.0000000000|160.763313|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 14 -W 1135.8873183302
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|14|725760.0000000000|160.618428|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 15 -W 1175.7550765102
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|15|777600.0000000000|160.478210|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 16 -W 1214.3146214780
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|16|829440.0000000000|160.835809|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 17 -W 1251.6868617715
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|17|881280.0000000000|162.426942|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 18 -W 1287.9751550117
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|18|933120.0000000000|163.564036|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 19 -W 1323.2686801717
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|19|984960.0000000000|163.703603|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 20 -W 1357.6450198484
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|20|1036800.0000000000|165.083095|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 21 -W 1391.1721676037
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|21|1088640.0000000000|164.555890|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 22 -W 1423.9101094912
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|22|1140480.0000000000|164.418921|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 23 -W 1455.9120852260
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|23|1192320.0000000000|162.778191|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 24 -W 1487.2256049111
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|24|1244160.0000000000|162.272065|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 25 -W 1517.8932768476
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|25|1296000.0000000000|166.741442|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 26 -W 1547.9534876394
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|26|1347840.0000000000|165.012570|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 27 -W 1577.4409655803
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|27|1399680.0000000000|163.892251|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 28 -W 1606.3872509102
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|28|1451520.0000000000|166.671833|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 29 -W 1634.8210910931
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|29|1503360.0000000000|165.243962|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 30 -W 1662.7687752297
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|30|1555200.0000000000|167.708682|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 31 -W 1690.2544186822
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|31|1607040.0000000000|166.833652|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 32 -W 1717.3002066822
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|32|1658880.0000000000|170.960189|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 33 -W 1743.9266039220
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|33|1710720.0000000000|167.117789|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 34 -W 1770.1525357615
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|34|1762560.0000000000|170.163326|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 35 -W 1795.9955456122
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|35|1814400.0000000000|167.141238|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 36 -W 1821.4719322171
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|36|1866240.0000000000|170.694357|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 37 -W 1846.5968698800
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|37|1918080.0000000000|173.341701|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 38 -W 1871.3845141623
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|38|1969920.0000000000|171.152686|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 39 -W 1895.8480951391
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|39|2021760.0000000000|174.924341|
-++ /home/m/mponce/naddelll/cscd71/final//openmp/main -i /home/m/mponce/naddelll/cscd71/final//bgedit.jpg -T -s 3 -e 0.5 -c 40 -W 1919.9999999579
-++ grep tock
-++ cut '-d ' -f3
-++ tail -n1
-|40|2073600.0000000000|173.089435|
+|1|51840.0000000000|143.89171660000002|
+|2|103680.0000000000|145.136221|
+|3|155520.0000000000|151.0717924|
+|4|207360.0000000000|153.88049140000004|
+|5|259200.0000000000|156.2823856|
+|6|311040.0000000000|156.5163604|
+|7|362880.0000000000|157.522373|
+|8|414720.0000000000|158.61187160000003|
+|9|466560.0000000000|158.6611674|
+|10|518400.0000000000|158.212919|
+|11|570240.0000000000|160.1229384|
+|12|622080.0000000000|161.22074400000002|
+|13|673920.0000000000|161.72446739999998|
+|14|725760.0000000000|160.6484696|
+|15|777600.0000000000|159.4925784|
+|16|829440.0000000000|161.40845459999997|
+|17|881280.0000000000|162.4699258|
+|18|933120.0000000000|163.68593619999996|
+|19|984960.0000000000|165.5513014|
+|20|1036800.0000000000|164.4843614|
+|21|1088640.0000000000|164.30554260000002|
+|22|1140480.0000000000|165.20125620000002|
+|23|1192320.0000000000|166.0005174|
+|24|1244160.0000000000|162.8857612|
+|25|1296000.0000000000|166.3038278|
+|26|1347840.0000000000|165.6990814|
+|27|1399680.0000000000|164.29834739999998|
+|28|1451520.0000000000|168.4500098|
+|29|1503360.0000000000|165.5359392|
+|30|1555200.0000000000|169.6250498|
+|31|1607040.0000000000|167.2853766|
+|32|1658880.0000000000|171.29777199999998|
+|33|1710720.0000000000|167.8727242|
+|34|1762560.0000000000|172.29627480000002|
+|35|1814400.0000000000|169.1538248|
+|36|1866240.0000000000|174.88666600000002|
+|37|1918080.0000000000|177.12082059999997|
+|38|1969920.0000000000|174.574948|
+|39|2021760.0000000000|179.1523316|
