@@ -8,7 +8,7 @@
 FINAL=$1
 EXE=$1/release/main
 
-source $FINAL/scripts/niagrasetup
+source $FINAL/scripts/niagarasetup
 
 if [ ! -f $EXE ]; then
     echo "Forgot to compile final, was looking for: '$EXE'"
@@ -18,7 +18,7 @@ if [ ! -f $EXE ]; then
 fi
 
 #Pretty grind-y settings.
-args="-i $FINAL/bgedit.jpg -T -s 3 -e 0.5"
+args="-i $FINAL/data/squares.jpg -T -s 3 -e 0.5"
 #Test image width ending at 900
 
 function run_program() {
