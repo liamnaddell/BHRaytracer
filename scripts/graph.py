@@ -43,8 +43,8 @@ with open(file) as f:
         speedup.append(s)
         speedup_ahmd.append(first_time/(12 + (first_time-12)/(c)))
 
-#xlabel = 'Nodes'
-xlabel = 'Cores'
+xlabel = 'Nodes'
+#xlabel = 'Cores'
 fig, ax1 = plt.subplots(figsize=(6,5))
 ax2 = ax1.twinx()
 bloo='#1f77b4'
