@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 #SBATCH --nodes=8
-#SBATCH --ntasks-per-node=16
-#SBATCH --time=0:45:00
+#SBATCH --ntasks-per-node=40
+#SBATCH --time=1:00:00
 #SBATCH --mail-type=FAIL
 #SBATCH --job-name liam-mpi-strong
 
@@ -19,13 +19,13 @@ if [ ! -f $EXE ]; then
 fi
 
 #Pretty grind-y settings.
-args="-i $FINAL/data/squares.jpg -T -s 10"
+args="-i $FINAL/data/squares.jpg -T -s 2 -W 2000"
 
 function run_program() {
     export procs=$1
 
     # Run the program on a fixed work size, then scrape the amount of time output by the tracer.
-    mpirun -c $procs $EXE $args -c 4 2>/dev/null | grep "tock" | cut -d' ' -f3 | tail -n1
+    mpirun -c $procs $EXE $args -c 40 2>/dev/null | grep "tock" | cut -d' ' -f3 | tail -n1
 }
 
 function run_with_num_cores() {
