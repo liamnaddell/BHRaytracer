@@ -44,7 +44,7 @@ with open(file) as f:
         speedup_ahmd.append(first_time/(12 + (first_time-12)/(c)))
 
 #xlabel = 'Nodes with 1 MPI process and 40 OMP threads'
-xlabel = 'MPI Process count with 1 thread'
+xlabel = 'Single-node MPI Process count with no multithreading'
 fig, ax1 = plt.subplots(figsize=(6,5))
 ax2 = ax1.twinx()
 bloo='#1f77b4'
