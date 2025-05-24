@@ -57,7 +57,7 @@ def merge_rows(r: list) -> list:
 #Takes in a list of lists of lists, reduces to a list of lists
 def average_dls(l:list) -> list:
 	# remove header
-	num_of_rows = len(l[0])-1
+	num_of_rows = len(l[0])
 	num_of_cols = len(l[0][0])
 	
 	num_of_files = len(l);
